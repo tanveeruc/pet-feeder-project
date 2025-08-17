@@ -1,0 +1,8 @@
+ID,Scenario,Expected,ActualOutcome,Alerts,Match
+T1,Pet eats as expected,CONSUMED_OK,CONSUMED_OK,,True
+T2,Pet does not eat,NOT_EATEN,NOT_EATEN,NOT_EATEN,True
+T3,Food bin empty,SKIPPED_EMPTY,SKIPPED_EMPTY,HOPPER_EMPTY,True
+T4,Dispense failure,DISPENSE_FAIL,DISPENSE_FAIL,DISPENSE_FAILURE,True
+T5,Door open,BLOCKED_DOOR,BLOCKED_DOOR,DOOR_OPEN,True
+T6,Partial consumption < threshold,NOT_EATEN,NOT_EATEN,NOT_EATEN,True
+T7,Network down during alert,NOT_EATEN,NOT_EATEN,NOT_EATEN (local fallback),True
